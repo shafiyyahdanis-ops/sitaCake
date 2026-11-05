@@ -400,6 +400,65 @@ font-family: "Butterfly Kids", cursive;
 font-size: 25px;
 }
 
+/* ===== Login page ===== */
+.login {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 22px;
+  border: 1px solid #f0e9df;
+  box-shadow: 0 6px 16px rgba(44, 38, 35, 0.04);
+}
+
+.login h1 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2c2623;
+  margin-bottom: 6px;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  color: #2c2623;
+  background-color: #f3eaf4;
+  border: 1px solid #ffb3c6;
+  border-radius: 10px;
+  padding: 9px 12px;
+}
+
+.form-input::placeholder {
+  color: #9c9086;
+}
+
+.form-input.is-invalid {
+  border-color: #e0533c;
+}
+
+.form-error {
+  font-size: 12px;
+  color: #e0533c;
+  margin-top: 4px;
+}
+
+.login-form .btn-buy {
+  width: 100%;
+  border: none;
+  margin-top: 8px;
+}
+
 @media screen and (min-width: 768px) {
   .container{
     width: 720px;
@@ -439,5 +498,7 @@ font-size: 25px;
 .bento-item.custom{
   grid-area: custom;
 }
+.login{
+  padding: 30px;
 }
-  
+}
