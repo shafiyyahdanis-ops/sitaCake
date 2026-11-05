@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Offside&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Offside&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap");
 /* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -25,18 +27,31 @@ body {
 }
 
 /* 6. Improve media defaults */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
 /* 7. Inherit fonts for form controls */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 /* 8. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
 }
 
@@ -44,98 +59,103 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
   text-wrap: pretty;
 }
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
 }
 
 /*
   10. Create a root stacking context
 */
-#root, #__next {
+#root,
+#__next {
   isolation: isolate;
 }
 
 body {
-     font-family: "Offside", sans-serif;
-     background-color: #f3eaf4;
+  font-family: "Offside", sans-serif;
+  background-color: #f3eaf4;
 }
 
-.container{
-    padding-inline: 16px;
+.container {
+  padding-inline: 16px;
 }
 
-.header{
-margin-top: 40px;
-padding-bottom: 24px;
-background-color: #fad2e1;
-border-radius: 25px;
-overflow: hidden;
+.header {
+  margin-top: 40px;
+  padding-bottom: 24px;
+  background-color: #fad2e1;
+  border-radius: 25px;
+  overflow: hidden;
 }
 
-.banner{
-    background: linear-gradient(to right, #eae4e9, #fff1e6, #fde2e4, #dfe7fd);
-    height: 80px;
+.banner {
+  background: linear-gradient(to right, #eae4e9, #fff1e6, #fde2e4, #dfe7fd);
+  height: 80px;
 }
 
-.profile, .rating {
-    margin-inline: 20px;
+.profile,
+.rating {
+  margin-inline: 20px;
 }
 
-.profile{
-    text-align: center;
+.profile {
+  text-align: center;
 }
 
-.profile h1{
-    font-size: 24px;
-    margin-top: 10px;
+.profile h1 {
+  font-size: 24px;
+  margin-top: 10px;
 }
 
-.logo{
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    object-fit: cover;
-    margin: 0 auto;
-    margin-top: -50px;
-
-    
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+  margin-top: -50px;
 }
 
-.rating{
-    border: 1px solid #ffb3c6;
-    border-radius: 22px;
-    background-color: #e7adbc;
-    font-size: 0;
-    padding-block: 10px;
-    margin-top: 25px;
+.rating {
+  border: 1px solid #ffb3c6;
+  border-radius: 22px;
+  background-color: #e7adbc;
+  font-size: 0;
+  padding-block: 10px;
+  margin-top: 25px;
 }
 
-.rating-card{
-    display: inline-block;
-    width: 33.33%;
-    font-size: 14px;
-    text-align: center;
-    border-right: 1px solid #ffb3c6 ;
+.rating-card {
+  display: inline-block;
+  width: 33.33%;
+  font-size: 14px;
+  text-align: center;
+  border-right: 1px solid #ffb3c6;
 }
 
-.rating-card:nth-child(3){
-    border-right: none;
+.rating-card:nth-child(3) {
+  border-right: none;
 }
 
 .rating-card p:first-child {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .highlight {
   margin-top: 30px;
 }
 
-.highlight h1{
+.highlight h1 {
   font-size: 24px;
   margin-bottom: 12px;
 }
 
-.bento-container{
+.bento-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 300px 100px 100px;
@@ -149,25 +169,24 @@ overflow: hidden;
   /* ; */
 }
 
-.bento-item{
+.bento-item {
   border-radius: 22px;
   padding: 20px;
 }
 
-.bento-item.shipping div p:nth-child(1){
-font-weight: bold;
+.bento-item.shipping div p:nth-child(1) {
+  font-weight: bold;
   font-size: 15px;
 }
 
-.bento-item.shipping div p:nth-child(2){
+.bento-item.shipping div p:nth-child(2) {
   font-size: 11px;
 }
 
-.fa-cake-candles{
+.fa-cake-candles {
   color: #e7adbc;
   visibility: hidden;
 }
-
 
 .bento-item.shipping {
   /* grid-area: shipping; */
@@ -175,38 +194,35 @@ font-weight: bold;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 }
 
-.bento-item.hero{
+.bento-item.hero {
   display: flex;
   flex-direction: column;
   gap: 8px;
   grid-column: 1/3;
   /* grid-area: hero; */
   background-color: #fff1e6;
-  
 }
 
-.bento-item.hero span{
+.bento-item.hero span {
   font-size: 12px;
   font-weight: bold;
   background-color: #f0e9df;
   padding: 4px 10px;
   border-radius: 9999px;
   width: fit-content;
-
 }
 
-.bento-item.hero h3{
+.bento-item.hero h3 {
   font-size: 24px;
 }
 
-.bento-item.hero p{
+.bento-item.hero p {
   font-size: 14px;
 }
 
-.bento-item.hero button{
+.bento-item.hero button {
   background-color: #e3d5ca;
   width: fit-content;
   border: 3px solid rgb(61, 34, 34);
@@ -216,7 +232,7 @@ font-weight: bold;
   margin-top: auto;
 }
 
-.bento-item.custom{
+.bento-item.custom {
   /* grid-area: custom; */
   background-color: rgb(197, 224, 255);
   display: flex;
@@ -231,10 +247,9 @@ font-weight: bold;
   padding: 4px 10px;
   border-radius: 9999px;
   width: fit-content;
-  
 }
 
-.bento-item.voucher{
+.bento-item.voucher {
   /* grid-area: voucher; */
   background-color: #f4cdf0;
   display: flex;
@@ -243,53 +258,50 @@ font-weight: bold;
   align-items: center;
 }
 
-.voucher-yay p:first-child{
+.voucher-yay p:first-child {
   font-weight: bold;
-
 }
 
-.voucher-yay p:last-child{
+.voucher-yay p:last-child {
   font-size: 12px;
-
 }
 
-.bento-item.voucher button{
+.bento-item.voucher button {
   color: #807777;
-  background-color:#fde2e4;
+  background-color: #fde2e4;
   border: 1px solid #e7adbc;
- padding: 4px 10px;
+  padding: 4px 10px;
   border-radius: 9999px;
-
 }
 
-.product{
+.product {
   margin-top: 25px;
 }
 
-.category{
-    width: fit-content;
-    margin-bottom: 25px;
-    display: flex;
-    gap: 10px;
-    margin-top: 14px;
+.category {
+  width: fit-content;
+  margin-bottom: 25px;
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
 }
 
 .category div {
-    border-radius: 50px;
-    padding: 6px 10px;
-    background-color: #dfe7fd;
-    transition: background-color 100ms ease-in-out;
-    cursor: pointer;
+  border-radius: 50px;
+  padding: 6px 10px;
+  background-color: #dfe7fd;
+  transition: background-color 100ms ease-in-out;
+  cursor: pointer;
 }
 
-.category div:first-child{
-     background-color: #c8b6ff;
+.category div:first-child {
+  background-color: #c8b6ff;
 }
 
-.category div:not(:first-child):hover{
-   background-color: #c8b6ff;
+.category div:not(:first-child):hover {
+  background-color: #c8b6ff;
 }
-.list{
+.list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
@@ -396,8 +408,8 @@ font-weight: bold;
 }
 
 .bio {
-font-family: "Butterfly Kids", cursive;
-font-size: 25px;
+  font-family: "Butterfly Kids", cursive;
+  font-size: 25px;
 }
 
 /* ===== Login page ===== */
@@ -451,6 +463,7 @@ font-size: 25px;
   font-size: 12px;
   color: #e0533c;
   margin-top: 4px;
+  display: none;
 }
 
 .login-form .btn-buy {
@@ -459,46 +472,49 @@ font-size: 25px;
   margin-top: 8px;
 }
 
+#session-wrapper {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
-  .container{
+  .container {
     width: 720px;
     margin: 0 auto;
     padding: 0px;
-}
+  }
 
-.banner{
-  height: 100px;
-}
-.logo{
-  height: 100px;
-  width: 100px;
-}
+  .banner {
+    height: 100px;
+  }
+  .logo {
+    height: 100px;
+    width: 100px;
+  }
 
-.bento-container{
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 140px 140px 100px; 
-   grid-template-areas: 
-  "hero hero shipping"
-  "hero hero custom"
-  "voucher voucher voucher" 
-   ; 
-}
+  .bento-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 140px 140px 100px;
+    grid-template-areas:
+      "hero hero shipping"
+      "hero hero custom"
+      "voucher voucher voucher";
+  }
 
-.bento-item.hero{
-  grid-area: hero;
-}
-.bento-item.shipping{
-  grid-area: shipping;
-}
+  .bento-item.hero {
+    grid-area: hero;
+  }
+  .bento-item.shipping {
+    grid-area: shipping;
+  }
 
-.bento-item.voucher{
-  grid-area: voucher;
-}
+  .bento-item.voucher {
+    grid-area: voucher;
+  }
 
-.bento-item.custom{
-  grid-area: custom;
-}
-.login{
-  padding: 30px;
-}
+  .bento-item.custom {
+    grid-area: custom;
+  }
+  .login {
+    padding: 30px;
+  }
 }
