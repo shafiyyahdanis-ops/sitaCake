@@ -1,0 +1,37 @@
+.product-list{
+    display: flex;
+    /* justify-content: center; */
+     align-items: center; 
+    flex-direction: row ;
+    border: 3px solid pink;
+    gap: 10px;
+    height: 700px;
+}
+
+.product{
+    width: 100px;
+    height: 100px;
+}
+
+.product:nth-child(1){
+    background-color: yellow ;
+    
+
+}
+
+.product:nth-child(2){
+    background-color:red ;
+    /* align-self: flex-end; */
+    
+
+}
+
+.product:nth-child(3){
+    background-color: blue;
+    
+}
+
+.product:nth-child(4){
+    background-color: blue;
+    
+}
